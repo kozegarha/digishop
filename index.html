@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopX | فروشگاه اینترنتی</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="container">
+
+        <div class="header-top">
+
+            <a href="index.html" class="logo">ShopX</a>
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input id="searchInput" type="text" placeholder="جستجو در بین محصولات...">
+
+            </div>
+
+            <div class="header-actions">
+
+                <a href="login.html" class="login-btn">
+                    <i class="fa-regular fa-user"></i>
+                    ورود | ثبت نام
+                </a>
+
+                <a href="cart.html" class="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i><button id="themeBtn" class="theme-btn">
+    🌙
+</button>
+                    <span class="cart-count">0</span>
+                </a>
+
+            </div>
+
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">خانه</a></li>
+                <li><a href="products.html">همه محصولات</a></li>
+                <li><a href="#">موبایل</a></li>
+                <li><a href="#">لپ‌تاپ</a></li>
+                <li><a href="#">هدفون</a></li>
+                <li><a href="#">ساعت هوشمند</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+
+    <div class="container">
+
+        <div class="hero-slider">
+
+            <div class="slide active">
+                <img src="images/banner-1.jpg" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="images/banner-2.jpg" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="images/banner-3.jpg" alt="">
+            </div>
+
+            <button class="prev">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <button class="next">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+<section class="products-section">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>🔥 پیشنهاد شگفت‌انگیز</h2>
+        </div>
+
+        <div id="products" class="products"></div>
+
+    </div>
+
+</section>
+
+<!-- ================= CATEGORIES ================= -->
+<section class="categories">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>دسته‌بندی‌ها</h2>
+        </div>
+
+        <div class="categories-grid">
+
+            <div class="category-card">📱 موبایل</div>
+            <div class="category-card">💻 لپ‌تاپ</div>
+            <div class="category-card">🎧 هدفون</div>
+            <div class="category-card">⌚ ساعت</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+    <div class="container footer-content">
+
+        <div class="footer-logo">
+            <h2>ShopX</h2>
+            <p>فروشگاه اینترنتی محصولات دیجیتال</p>
+        </div>
+
+        <div class="footer-links">
+
+            <h3>دسترسی سریع</h3>
+
+            <a href="index.html">خانه</a>
+
+            <a href="products.html">محصولات</a>
+
+            <a href="about.html">درباره ما</a>
+
+            <a href="contact.html">تماس با ما</a>
+
+        </div>
+
+        <div class="footer-contact">
+
+            <h3>ارتباط با ما</h3>
+
+            <p>📞 0912-000-0000</p>
+
+            <p>📧 info@shopx.com</p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 ShopX | تمامی حقوق محفوظ است.
+    </div>
+
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

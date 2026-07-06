@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>همه محصولات | ShopX</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="container">
+
+        <div class="header-top">
+
+            <a href="index.html" class="logo">
+                ShopX
+            </a>
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="جستجو در محصولات..."
+                >
+
+            </div>
+
+            <div class="header-actions">
+
+                <a href="login.html" class="login-btn">
+                    <i class="fa-regular fa-user"></i>
+                    ورود | ثبت نام
+                </a>
+
+                <a href="cart.html" class="cart-btn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </a>
+
+            </div>
+
+        </div>
+
+        <nav class="navbar">
+
+            <ul>
+
+                <li><a href="index.html">خانه</a></li>
+
+                <li><a href="products.html">همه محصولات</a></li>
+
+                <li><a href="#">موبایل</a></li>
+
+                <li><a href="#">لپ تاپ</a></li>
+
+                <li><a href="#">هدفون</a></li>
+
+                <li><a href="#">ساعت</a></li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<main>
+
+<section class="products-page">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>همه محصولات</h2>
+
+</div>
+
+<div class="filters">
+
+<button class="filter-btn active" data-category="all">
+همه
+</button>
+
+<button class="filter-btn" data-category="mobile">
+موبایل
+</button>
+
+<button class="filter-btn" data-category="laptop">
+لپ تاپ
+</button>
+
+<button class="filter-btn" data-category="headphone">
+هدفون
+</button>
+
+<button class="filter-btn" data-category="watch">
+ساعت
+</button>
+
+</div>
+
+<div
+class="products"
+id="products">
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+
+<div class="container">
+
+<p>
+
+© 2026 ShopX
+
+</p>
+
+</div>
+
+</footer>
+
+<script src="js/products.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
