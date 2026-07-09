@@ -33,9 +33,9 @@ function renderProducts(data = products) {
 
             </div>
 
-            <button onclick="addToCart(event, ${product.id})">
-                افزودن به سبد خرید
-            </button>
+          <button class="add-btn" onclick="addToCart(event, ${product.id})">
+    افزودن به سبد خرید
+</button>
 
         </div>
        ` ;

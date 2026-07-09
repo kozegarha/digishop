@@ -1,41 +1,282 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
 <head>
-    <meta charset="UTF-8">
-    <title>سبد خرید</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سبد خرید | ShopX</title>
 
-    <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
 <header class="header">
 
-    <div class="container">
+<div class="container">
 
-        <a href="index.html" class="logo">ShopX</a>
+<div class="header-top">
 
-        <a href="cart.html" class="cart-btn">
-            🛒
-            <span class="cart-count">0</span>
-        </a>
+<a href="index.html" class="logo">ShopX</a>
 
-    </div>
+<div class="search-box">
+<i class="fa-solid fa-magnifying-glass"></i>
+<input type="text" placeholder="جستجو...">
+</div>
 
-</header>
+<div class="header-actions">
 
-<main class="container">
+<a href="login.html" class="login-btn">
+<i class="fa-regular fa-user"></i>
+ورود
+</a>
 
-    <h2>سبد خرید شما</h2>
+<a href="cart.html" class="cart-btn">
+<i class="fa-solid fa-cart-shopping"></i>
+<span class="cart-count">2</span>
+</a>
 
-    <div id="cartItems"></div>
+</div>
 
-    <h3>جمع کل: <span id="totalPrice">0</span> تومان</h3>
+</div>
 
-</main>
+<nav class="navbar">
+<ul>
+<li><a href="index.html">خانه</a></li>
+<li><a href="products.html">محصولات</a></li>
+<li><a href="#">موبایل</a></li>
+<li><a href="#">لپ تاپ</a></li>
+<li><a href="#">هدفون</a></li>
+</ul>
+</nav>
 
-<script src="js/main.js"></script>
+</div>
+
+</header><div class="buying">
+<div class="buy1">
+
+
+<section class="container">
+
+<h2 class="cart-title">
+🛒 سبد خرید شما
+</h2>
+
+<div class="cart-page">
+
+<div class="cart-products" id="cartProducts">
+<div class="cart-price">
+
+<del>3,000,000</del>
+
+<h3>2,500,000 تومان</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="buy2">
+
+<aside class="cart-summary">
+
+<h3>خلاصه سفارش</h3>
+
+<div>
+<span>قیمت کالاها</span>
+<span id="subtotal">0</span>
+</div>
+
+<div class="buy">
+<span>تخفیف</span>
+<span>1,500,000</span>
+</div>
+
+<div>
+<span>ارسال</span>
+<span>رایگان</span>
+</div>
+
+<input
+type="text"
+placeholder="کد تخفیف">
+
+<button class="coupon-btn">
+اعمال کد
+</button>
+
+<hr>
+
+<div class="final-price">
+
+<span>مبلغ نهایی</span>
+
+<strong id="totalPrice">
+0
+</strong>
+
+</div>
+
+<button class="checkout">
+
+ادامه فرایند خرید
+
+</button>
+
+</aside>
+
+
+
+
+</div>
+
+
+</div>
+
+</section>
+</div>
+<section class="suggestions container">
+
+<h2 class="section-title">
+پیشنهاد برای شما
+</h2>
+
+<div class="products">
+
+<div class="product-card">
+
+<img src="images/p5.jpg">
+
+<h3>Apple Watch Series 10</h3>
+
+<div class="prices">
+
+<span class="price">26,800,000 تومان</span>
+
+<span class="old-price">29,000,000</span>
+
+</div>
+
+<button
+class="add-btn"
+
+data-name="Apple Watch Series 10"
+
+data-price="26800000"
+
+data-image="images/p6.jpg">
+
+افزودن به سبد
+
+</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="images/p4.jpg">
+
+<h3>Sony WH-1000XM6</h3>
+
+<div class="prices">
+
+<span class="price">18,900,000 تومان</span>
+
+<span class="old-price">20,500,000</span>
+
+</div>
+
+<button
+class="add-btn"
+
+data-name="Sony WH-1000XM6"
+
+data-price="18900000"
+
+data-image="images/headphone.png">
+
+افزودن به سبد
+
+</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="images/p2.jpg">
+
+<h3>Galaxy S25 Ultra</h3>
+
+<div class="prices">
+
+<span class="price">79,900,000 تومان</span>
+
+<span class="old-price">84,000,000</span>
+
+</div>
+
+<button
+class="add-btn"
+
+data-name="Galaxy S25 Ultra"
+
+data-price="79900000"
+
+data-image="images/phone.png">
+
+افزودن به سبد
+
+</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="images/p3.jpg">
+
+<h3>ASUS VivoBook</h3>
+
+<div class="prices">
+
+<span class="price">39,500,000 تومان</span>
+
+<span class="old-price">42,000,000</span>
+
+</div>
+
+<button
+class="add-btn"
+
+data-name="ASUS VivoBook"
+
+data-price="39500000"
+
+data-image="images/laptop.png">
+
+افزودن به سبد
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+<footer class="footer">
+
+<div class="footer-bottom">
+
+©2026 ShopX
+
+</div>
+
+</footer>
+
 <script src="js/cart.js"></script>
 
 </body>
