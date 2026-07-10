@@ -255,8 +255,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     updateCartCount();
 
+    const params = new URLSearchParams(window.location.search);
+    const category = params.get("category");
+
     if (productsContainer) {
-        renderProducts(products);
+
+        if (category) {
+            renderProducts(
+                products.filter(product => product.category === category)
+            );
+        } else {
+            renderProducts(products);
+        }
+
     }
 
 });

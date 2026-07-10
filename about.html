@@ -1,30 +1,352 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>درباره ما</title>
+<!DOCTYPE html><html lang="fa" dir="rtl"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>درباره ما | ShopX</title>  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: sans-serif;
+    }
 
-<link rel="stylesheet" href="css/style.css">
-</head>
+    body{
+      background:#f7faf9;
+      color:#333;
+      line-height:1.9;
+    }
 
-<body>
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+    }
 
-<header class="header">
-<div class="container">
-<h1>ShopX</h1>
+    /* ===== Hero ===== */
+    .hero{
+      background: linear-gradient(135deg,#059669,#10b981);
+      color:#fff;
+      padding:100px 20px;
+      text-align:center;
+    }
+
+    .hero h1{
+      font-size:48px;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:20px;
+      opacity:.95;
+    }
+
+    /* ===== About ===== */
+    .about{
+      padding:80px 0;
+    }
+    .images1{
+        height: 400px;
+    }
+
+    .about-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:24px;
+      box-shadow:0 10px 30px rgba(0,0,0,.12);
+    }
+
+    .section-title{
+      font-size:32px;
+      color:#059669;
+      margin-bottom:20px;
+    }
+
+    .about p{
+      color:#555;
+      font-size:17px;
+    }
+
+    /* ===== Features ===== */
+    .features{
+      padding:80px 0;
+      background:#fff;
+    }
+
+    .feature-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:24px;
+    }
+
+    .feature-card{
+      background:#fff;
+      border-radius:20px;
+      padding:32px 24px;
+      text-align:center;
+      box-shadow:0 5px 20px rgba(0,0,0,.06);
+      transition:.3s;
+    }
+
+    .feature-card:hover{
+      transform:translateY(-6px);
+    }
+
+    .feature-card i{
+      font-size:40px;
+      color:#10b981;
+      margin-bottom:18px;
+    }
+
+    .feature-card h3{
+      margin-bottom:12px;
+      font-size:20px;
+    }
+
+    /* ===== Stats ===== */
+    .stats{
+      padding:80px 0;
+    }
+
+    .stats-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:24px;
+    }
+
+    .stat{
+      background:#fff;
+      border-radius:20px;
+      text-align:center;
+      padding:32px 20px;
+      box-shadow:0 5px 20px rgba(0,0,0,.06);
+    }
+
+    .stat h2{
+      color:#059669;
+      font-size:38px;
+      margin-bottom:10px;
+    }
+
+    /* ===== Mission ===== */
+    .mission{
+      padding:80px 0;
+      background:#fff;
+      text-align:center;
+    }
+
+    .mission p{
+      max-width:800px;
+      margin:20px auto 0;
+      color:#555;
+      font-size:18px;
+    }
+
+    /* ===== Contact ===== */
+    .contact{
+      padding:80px 0;
+    }
+
+    .contact-box{
+      background:linear-gradient(135deg,#059669,#10b981);
+      color:#fff;
+      border-radius:28px;
+      padding:50px 30px;
+      text-align:center;
+    }
+
+    .contact-info{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:30px;
+      margin-top:30px;
+    }
+
+    .contact-item{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-size:18px;
+    }
+
+    .contact-item i{
+      font-size:22px;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:35px;
+      background:#fff;
+      color:#059669;
+      padding:14px 32px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:bold;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+    }
+
+    footer{
+      background:#fff;
+      text-align:center;
+      padding:24px;
+      color:#666;
+      border-top:1px solid #eee;
+    }
+
+    /* ===== Responsive ===== */
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:36px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+
+      .about-grid{
+        grid-template-columns:1fr;
+      }
+
+      .section-title{
+        font-size:28px;
+      }
+      .contact-item{
+        width:100%;
+        justify-content:center;
+      }
+    }
+  </style></head><body>  <!-- HERO -->  <section class="hero">
+    <div class="container">
+      <h1>درباره digishop</h1>
+      <p>تجربه‌ای نوین از خرید آنلاین، با بهترین قیمت و سریع‌ترین ارسال</p>
+    </div>
+  </section>  <!-- ABOUT -->  <section class="about">
+    <div class="container about-grid">  <img  class="images1"  src="./images/about.jpg" alt="ShopX">
+
+  <div>
+    <h2 class="section-title">داستان ما</h2>
+    <p>
+      ShopX با هدف ایجاد تجربه‌ای ساده، سریع و مطمئن از خرید اینترنتی راه‌اندازی شد.
+      ما تلاش می‌کنیم جدیدترین محصولات دیجیتال، لوازم جانبی و کالاهای کاربردی را با
+      قیمت مناسب و تضمین اصالت در اختیار کاربران قرار دهیم.
+    </p>
+  </div>
+
 </div>
-</header>
 
-<section class="container page">
+  </section>  <!-- FEATURES -->  <section class="features">
+    <div class="container">  <h2 class="section-title" style="text-align:center;margin-bottom:40px;">
+    چرا ShopX؟
+  </h2>
 
-<h2>درباره ما</h2>
+  <div class="feature-grid">
 
-<p>
-ShopX یک فروشگاه اینترنتی نمونه است که با HTML، CSS و JavaScript ساخته شده است.
-</p>
+    <div class="feature-card">
+      <i class="fa-solid fa-truck-fast"></i>
+      <h3>ارسال سریع</h3>
+      <p>تحویل سفارش در کوتاه‌ترین زمان ممکن.</p>
+    </div>
 
-</section>
+    <div class="feature-card">
+      <i class="fa-solid fa-shield-halved"></i>
+      <h3>ضمانت اصالت</h3>
+      <p>تمام کالاها با تضمین اصل بودن ارائه می‌شوند.</p>
+    </div>
 
-</body>
+    <div class="feature-card">
+      <i class="fa-solid fa-credit-card"></i>
+      <h3>پرداخت امن</h3>
+      <p>خریدی مطمئن با درگاه‌های بانکی معتبر.</p>
+    </div>
+
+    <div class="feature-card">
+      <i class="fa-solid fa-headset"></i>
+      <h3>پشتیبانی ۲۴ ساعته</h3>
+      <p>همیشه در کنار شما هستیم.</p>
+    </div>
+
+  </div>
+</div>
+
+  </section>  <!-- STATS -->  <section class="stats">
+    <div class="container">  <h2 class="section-title" style="text-align:center;margin-bottom:40px;">
+    آمار digishop
+  </h2>
+
+  <div class="stats-grid">
+
+    <div class="stat">
+      <h2>+۵۰۰۰</h2>
+      <p>مشتری راضی</p>
+    </div>
+
+    <div class="stat">
+      <h2>+۱۲۰۰</h2>
+      <p>محصول متنوع</p>
+    </div>
+
+    <div class="stat">
+      <h2>+۸۰۰۰</h2>
+      <p>سفارش موفق</p>
+    </div>
+
+    <div class="stat">
+      <h2>۲۴/۷</h2>
+      <p>پشتیبانی</p>
+    </div>
+
+  </div>
+</div>
+
+  </section>  <!-- MISSION -->  <section class="mission">
+    <div class="container">
+      <h2 class="section-title">مأموریت ما</h2>
+      <p>
+        هدف ما ایجاد تجربه‌ای ساده، سریع و مطمئن از خرید اینترنتی است تا کاربران بتوانند
+        با خیالی آسوده محصولات مورد نیاز خود را انتخاب و خریداری کنند.
+      </p>
+    </div>
+  </section>  <!-- CONTACT -->  <section class="contact">
+    <div class="container">  <div class="contact-box">
+
+    <h2 style="font-size:36px;margin-bottom:10px;">ارتباط با ما</h2>
+
+    <div class="contact-info">
+
+      <div class="contact-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>ایران</span>
+      </div>
+
+      <div class="contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <span>09051828462</span>
+      </div>
+
+      <div class="contact-item">
+        <i class="fa-solid fa-envelope"></i>
+        <span>kozegarha315@gmail.com</span>
+      </div>
+
+    </div>
+
+    <a href="products.html" class="btn">مشاهده محصولات</a>
+
+  </div>
+
+</div>
+
+  </section>  <footer>
+    © digishop - تمامی حقوق محفوظ است.
+  </footer></body>
 </html>

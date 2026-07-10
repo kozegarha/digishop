@@ -53,5 +53,35 @@ const products = [
     discount: 14,
     image: "images/p6.jpg",
     category: "headphone"
-  }
+  },
+    {
+    id: 7,
+    title: "Airpod rt2",
+    price: 78900000,
+    oldPrice: 509900000,
+    discount: 10,
+    image: "images/p7.jpg",
+    category: "headphone"
+  },
+    {
+    id: 8,
+    title: "laptob acer",
+    price: 98900000,
+    oldPrice: 109900000,
+    discount: 10,
+    image: "images/p8.jpg",
+    category: "laptob"
+  },
 ];
+const params = new URLSearchParams(window.location.search);
+const category = params.get("category");
+
+let filteredProducts = products;
+
+if (category) {
+    filteredProducts = products.filter(
+        product => product.category === category
+    );
+}
+
+renderProducts(filteredProducts);
